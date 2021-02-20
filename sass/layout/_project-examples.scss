@@ -1,0 +1,20 @@
+.example-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+        width: 370px;
+        background-color: var(--white-color);
+
+        &:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
+
+        &:nth-child(-n + 6) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+

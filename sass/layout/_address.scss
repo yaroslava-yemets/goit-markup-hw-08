@@ -1,0 +1,16 @@
+
+.address {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+
+    & > .map {
+        color: var(--white-color);
+    }
+}
+

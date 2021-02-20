@@ -1,0 +1,39 @@
+.modal {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+
+    &-close-btn {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.close-icon {
+    width: 18px;
+    height: 18px;
+    fill: var(--black-color);
+    transition: fill 250ms var(--cubic);
+
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+        fill: var(--accent-color);
+    }
+}
