@@ -1,0 +1,10 @@
+.menu {
+    width: 40px;
+    height: 40px;
+    @include centeredFlex;
+
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
+}
+

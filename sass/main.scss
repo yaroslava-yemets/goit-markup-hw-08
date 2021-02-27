@@ -1,37 +1,28 @@
-// UTILS
+// UTILS 
+
+@import "./utils/mixins";
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 
 // BASE
+
 @import "./base/resets";
 @import "./base/container";
 
-// COMPONENTS
-@import "./components/section-title";
 
-// LAYOUT
+//COMPONENTS
 
-/* HEADER */
+@import "./components/buttons";
+
+//HEADER
 
 @import "./layout/header";
-@import "./layout/navigation";
 @import "./layout/logo";
-@import "./layout/header-contacts";
+@import "./layout/menu";
+
+//HERO 
 
 @import "./layout/hero";
+
 @import "./layout/features";
-@import "./layout/what-we-do";
-@import "./layout/our-team";
-@import "./layout/network-list";
-@import "./layout/constant-clients";
-
-/* FOOTER */
-
-@import "./layout/footer";
-@import "./layout/address";
-
-/* MODAL WINDOW */ 
-@import "./layout/backdrop";
-@import "./layout/modal";
-@import "./layout/modal-form";
 

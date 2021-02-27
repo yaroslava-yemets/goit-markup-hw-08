@@ -1,26 +1,46 @@
-.projects-button {
-    border: none;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    color: var(--emphasis-color);
-    background-color: var(--second-bcg);
-    padding: 6px 22px;
+.button {
+    min-width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    @include fontButton ();
+    color: var(--white-color);
+    cursor: pointer;
 
-    transition: color 250ms var(--cubic), 
-    background-color 250ms var(--cubic),
-    box-shadow 250ms var(--cubic); 
-
-    &:hover,
-    &:focus {
-        color: #ffffff;
-        background-color: var(--accent-color);
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-        0px 1px 2px rgba(0, 0, 0, 0.08), 
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-        outline: none;
+    .hero & {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
     }
-} 
+}
+
+// .projects-button {
+//     border: none;
+//     font-family: inherit;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.62;
+//     letter-spacing: 0.03em;
+//     color: var(--emphasis-color);
+//     background-color: var(--second-bcg);
+//     padding: 6px 22px;
+//     border-radius: 4px;
+
+//     transition: color 250ms var(--cubic), 
+//     background-color 250ms var(--cubic),
+//     box-shadow 250ms var(--cubic); 
+
+//     &:hover,
+//     &:focus {
+//         color: #ffffff;
+//         background-color: var(--accent-color);
+//         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+//         0px 1px 2px rgba(0, 0, 0, 0.08), 
+//         0px 2px 2px rgba(0, 0, 0, 0.12);
+//         outline: none;
+//     }
+// } 
+
+

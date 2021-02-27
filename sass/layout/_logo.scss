@@ -1,24 +1,24 @@
 .logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-
-    .navigation & {
-        margin-right: 90px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: Raleway;
+    @include titleFont ($fs: 24px, $lh: 28px);
 
     &-accent-color {
         color: var(--accent-color);
     }
 
-    .footer & {
-        display: inline-block;
+    @media screen and (min-width: 768px) {
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include titleFont ($fs: 26px, $lh: 31px);
+        
     }
 }
-    
+
 .black-logo {
     color: var(--black-color);
 }
