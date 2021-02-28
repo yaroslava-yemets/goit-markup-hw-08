@@ -1,10 +1,106 @@
-.menu {
+.menu-btn {
     width: 40px;
     height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
     @include centeredFlex;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
+}
+
+.menu-btn-open {
+    &:hover .menu-icon-open, &:focus .menu-icon-open{
+        fill: var(--accent-color);
+    }
+}
+
+.menu-icon-open, .menu-icon-close {
+    transition: fill 1000ms var(--cubic);
+}
+
+.menu-btn-close {
+    &:hover .menu-icon-close, &:focus .menu-icon-close{
+        fill: var(--accent-color);
+    }
+}
+
+.menu-btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+
+.mobile-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    max-width: 480px;
+    height: 100vh;
+    background-color: var(--white-color);
+    padding: 48px 40px;
+
+    transition: transform 350ms var(--cubic);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu.is-open {
+    transform: translateX(-50%) translateY(0%);
+}
+
+.menu-nav {
+    margin-bottom: 302px;
+
+    &-link {
+        @include fontText ($fs: 40px, $lh: 47px, $ls: 0.02em, $fw: 500);
+        color: var(--emphasis-color);
+    }
+
+    &-item {
+        display: block;
+        &:not(:last-child){
+            margin-bottom: 36px;
+    }
+}
+
+
+.current {
+    color: var(--accent-color);
+}
+
+.menu-number {
+    @include fontText ($fs: 34px, $lh: 40px, $ls: 0.02em, $fw: 500);
+    color: var(--accent-color);
+    margin-bottom: 32px;
+}
+
+.menu-email {
+    @include fontText ($fs: 24px, $lh: 28px, $ls: 0.02em, $fw: 500);
+    color: var(--text-color);
+    margin-bottom: 64px;
+}
+
+.menu-networks {
+    display: flex;   
+}
+
+.menu-networks-item {
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+.menu-networks-link {
+    display: block;
+    @include fontText ($fs: 18px, $lh: 22px, $ls: 0.02em, $fw: 500);
+    color: var(--accent-color);
 }
 
