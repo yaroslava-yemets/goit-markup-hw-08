@@ -1,0 +1,20 @@
+// UTILS 
+
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// BASE
+
+@import "./base/resets";
+@import "./base/container";
+
+//COMPONENTS
+
+@import "./components/buttons";
+@import "./components/section-title";
+
+
+//FOOTER
+
+@import "./layout/footer";

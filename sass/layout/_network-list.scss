@@ -10,12 +10,7 @@
             margin-right: 10px;
         }    
     }   
-
-    &.reverse {
-        margin-top: 20px;
-    }
 }
-
 
 .network-link {
     display: flex;
@@ -60,7 +55,6 @@
         fill: var(--white-color);
     }
 }
-
 
 
 .network-link.reverse:hover,

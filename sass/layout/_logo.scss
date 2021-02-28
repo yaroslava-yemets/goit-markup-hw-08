@@ -3,6 +3,7 @@
     margin-bottom: 16px;
     font-family: Raleway;
     @include titleFont ($fs: 24px, $lh: 28px);
+    color: var(--black-color);
 
     &-accent-color {
         color: var(--accent-color);
@@ -19,10 +20,19 @@
     }
 }
 
-.black-logo {
-    color: var(--black-color);
-}
-
-.white-logo {
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    font-family: Raleway;
+    @include titleFont ($fs: 24px, $lh: 28px);
     color: var(--white-color);
+
+    &-accent-color {
+        color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include titleFont ($fs: 26px, $lh: 31px);
+        
+    }
 }
