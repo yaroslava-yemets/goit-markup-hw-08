@@ -13,6 +13,7 @@
 //COMPONENTS
 
 @import "./components/buttons";
+@import "./components/section-title";
 
 //HEADER
 
@@ -23,6 +24,10 @@
 //HERO 
 
 @import "./layout/hero";
-
 @import "./layout/features";
+@import "./layout/what-we-do";
+@import "./layout/our-team";
+@import "./layout/network-list";
+
+@import "./layout/constant-clients";
 

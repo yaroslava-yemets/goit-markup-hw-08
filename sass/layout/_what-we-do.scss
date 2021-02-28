@@ -1,4 +1,8 @@
 .we-do {
+    @media  screen and (max-width: 1199px) {
+        display: none;
+    }
+
     padding-bottom: 94px;
 
     &-list {
@@ -15,11 +19,8 @@
 
     &-caption {
         width: 100%;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
+        @include titleFont ($fs: 14px, $lh: 16px);
         text-align: center;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--white-color);
         padding-top: 27px;

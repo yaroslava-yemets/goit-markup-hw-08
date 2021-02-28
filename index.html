@@ -73,8 +73,8 @@
                 <h2 class="section-title visually-hidden">Особенности</h2>
                 <ul class="feature-list list">
                     <li class="feature-list-item">
-                        <div class="feature-img-bcg">
-                            <svg class="feature-img" width="70" height="70">
+                        <div class="feature-icon-bcg">
+                            <svg class="feature-icon" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-antenna"></use>
                             </svg>
                         </div>
@@ -84,8 +84,8 @@
                         </p>
                     </li>
                     <li class="feature-list-item">
-                        <div class="feature-img-bcg">
-                            <svg class="feature-img" width="70" height="70">
+                        <div class="feature-icon-bcg">
+                            <svg class="feature-icon" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-clock" width="70" height="70"></use>
                             </svg>
                         </div>
@@ -95,8 +95,8 @@
                         </p>
                     </li>
                     <li class="feature-list-item">
-                        <div class="feature-img-bcg">
-                            <svg class="feature-img" width="70" height="70">
+                        <div class="feature-icon-bcg">
+                            <svg class="feature-icon" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-diagram"></use>
                             </svg>
                         </div>
@@ -106,8 +106,8 @@
                         </p>
                     </li>
                     <li class="feature-list-item">
-                        <div class="feature-img-bcg">
-                            <svg class="feature-img" width="70" height="70">
+                        <div class="feature-icon-bcg">
+                            <svg class="feature-icon" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-astronaut"></use>
                             </svg>
                         </div>
@@ -121,62 +121,133 @@
         </section>
 
         <!-- Чем мы занимаемся -->
-            <!-- <section class="we-do">
+            <section class="we-do">
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="we-do-list">
                         <li class="we-do-item list">
-                            <img class="we-do-img" src="./images/what-we-do/box1.jpg" width="370" height="294" alt="руки на клавиатуре">
+                            <picture>
+                                <source srcset="
+                                ./images/what-we-do/box1.webp 1x,
+                                ./images/what-we-do/box1@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" 
+                                >
+                                <source srcset="
+                                ./images/what-we-do/box1.jpg 1x,
+                                ./images/what-we-do/box1@2x.jpg 2x"
+                                media="(min-width: 1200px)" 
+                                >
+                                <img class="we-do-img" src="./images/what-we-do/box1.jpg" width="370" height="294" alt="руки на клавиатуре">
+                            </picture>
                             <p class="we-do-caption">Десктопные приложения</p>
                         </li>
                          <li class="we-do-item list">
-                            <img class="we-do-img" src="./images/what-we-do/box2.jpg" width="370" height="294" alt="руки держат телефон">
+                            <picture>
+                                <source srcset="
+                                ./images/what-we-do/box2.webp 1x,
+                                ./images/what-we-do/box2@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" 
+                                >
+                                <source srcset="
+                                ./images/what-we-do/box2.jpg 1x,
+                                ./images/what-we-do/box2@2x.jpg 2x"
+                                media="(min-width: 1200px)" 
+                                >
+                                <img class="we-do-img" src="./images/what-we-do/box2.jpg" width="370" height="294" alt="руки держат телефон">
+                            </picture>
                             <p class="we-do-caption">Мобильные приложения</p>
                         </li>
                          <li class="we-do-item list">
-                            <img class="we-do-img" src="./images/what-we-do/box3.jpg" width="370" height="294" alt="планшет с цветовой гаммой">
+                            <picture>
+                                <source srcset="
+                                ./images/what-we-do/box3.webp 1x,
+                                ./images/what-we-do/box3@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" 
+                                >
+                                <source srcset="
+                                ./images/what-we-do/box3.jpg 1x,
+                                ./images/what-we-do/box3@2x.jpg 2x"
+                                media="(min-width: 1200px)" 
+                                >
+                                <img class="we-do-img" src="./images/what-we-do/box3.jpg" width="370" height="294" alt="планшет с цветовой гаммой">
+                            </picture>
                             <p class="we-do-caption">Дизайнерские решения</p>
                         </li>
                     </ul>
                 </div>
             </section>
-         -->
+
 
         <!-- Наша команда -->
-        <!-- <section class="our-team">  
+        <section class="our-team">  
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list-item list">
-                        <img src="./images/our-team/member1.jpg" width="270" height="260" alt="фотография члена команды"/>
+                        <picture>
+                            <source srcset="
+                            ./images/our-team/member1-desktop.webp 1x,
+                            ./images/our-team/member1-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" 
+                            >
+                            <source srcset="
+                            ./images/our-team/member1-desktop.jpg 1x,
+                            ./images/our-team/member1-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            >
+
+                            <source srcset="
+                            ./images/our-team/member1-tablet.webp 1x,
+                            ./images/our-team/member1-tablet@2x.webp 2x"
+                            type="image/webp" media="(min-width: 768px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member1-tablet.jpg 1x,
+                            ./images/our-team/member1-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member1-mobile.webp 1x,
+                            ./images/our-team/member1-mobile@2x.webp 2x"
+                            type="image/webp" media="(min-width: 320px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member1-mobile.jpg 1x,
+                            ./images/our-team/member1-mobile@2x.jpg 2x"
+                            media="(min-width: 320px)"
+                            >
+                            
+                            <img src="./images/our-team/member1-mobile.jpg" 
+                                alt="фотография члена команды">
+                        </picture>                     
                         <div class="team-caption">
                             <h3 class="team-subtitle">Игорь Демьяненко</h3>
                             <p class="team-text" lang="en">Product Designer</p>
                             <ul class="network-list list">
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -185,35 +256,69 @@
                         </div>
                     </li>
                     <li class="team-list-item list">
-                        <img src="./images/our-team/member2.jpg" width="270" height="260" alt="фотография члена команды"/>
+                        <picture>
+                            <source srcset="
+                            ./images/our-team/member2-desktop.webp 1x,
+                            ./images/our-team/member2-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" 
+                            >
+                            <source srcset="
+                            ./images/our-team/member2-desktop.jpg 1x,
+                            ./images/our-team/member2-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            >
+
+                            <source srcset="
+                            ./images/our-team/member2-tablet.webp 1x,
+                            ./images/our-team/member2-tablet@2x.webp 2x"
+                            type="image/webp" media="(min-width: 768px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member2-tablet.jpg 1x,
+                            ./images/our-team/member2-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member2-mobile.webp 1x,
+                            ./images/our-team/member2-mobile@2x.webp 2x"
+                            type="image/webp" media="(min-width: 320px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member2-mobile.jpg 1x,
+                            ./images/our-team/member2-mobile@2x.jpg 2x"
+                            media="(min-width: 320px)"
+                            >
+                            <img src="./images/our-team/member2-mobile.jpg" 
+                                alt="фотография члена команды">
+                        </picture>
                         <div class="team-caption">
                             <h3 class="team-subtitle">Ольга Репина</h3>
                             <p class="team-text" lang="en">Frontend Developer</p>
                             <ul class="network-list list">
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -222,35 +327,70 @@
                         </div>
                     </li>
                     <li class="team-list-item list">
-                        <img src="./images/our-team/member3.jpg" width="270" height="260" alt="фотография члена команды"/>
+                        <picture>
+                            <source srcset="
+                            ./images/our-team/member3-desktop.webp 1x,
+                            ./images/our-team/member3-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" 
+                            >
+                            <source srcset="
+                            ./images/our-team/member3-desktop.jpg 1x,
+                            ./images/our-team/member3-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            >
+
+                            <source srcset="
+                            ./images/our-team/member3-tablet.webp 1x,
+                            ./images/our-team/member3-tablet@2x.webp 2x"
+                            type="image/webp" media="(min-width: 768px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member3-tablet.jpg 1x,
+                            ./images/our-team/member3-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member3-mobile.webp 1x,
+                            ./images/our-team/member3-mobile@2x.webp 2x"
+                            type="image/webp" media="(min-width: 320px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member3-mobile.jpg 1x,
+                            ./images/our-team/member3-mobile@2x.jpg 2x"
+                            media="(min-width: 320px)"
+                            >
+                            
+                            <img src="./images/our-team/member3-mobile.jpg" 
+                                alt="фотография члена команды">
+                        </picture>
                         <div class="team-caption">
                             <h3 class="team-subtitle">Николай Тарасов</h3>
                             <p class="team-text" lang="en">Marketing</p>
                             <ul class="network-list list">
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -259,35 +399,70 @@
                         </div>
                     </li>
                     <li class="team-list-item list">
-                        <img src="./images/our-team/member4.jpg" width="270" height="260" alt="фотография члена команды"/>
+                        <picture>
+                            <source srcset="
+                            ./images/our-team/member4-desktop.webp 1x,
+                            ./images/our-team/member4-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" 
+                            >
+                            <source srcset="
+                            ./images/our-team/member4-desktop.jpg 1x,
+                            ./images/our-team/member4-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            >
+
+                            <source srcset="
+                            ./images/our-team/member4-tablet.webp 1x,
+                            ./images/our-team/member4-tablet@2x.webp 2x"
+                            type="image/webp" media="(min-width: 768px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member4-tablet.jpg 1x,
+                            ./images/our-team/member4-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member4-mobile.webp 1x,
+                            ./images/our-team/member4-mobile@2x.webp 2x"
+                            type="image/webp" media="(min-width: 320px)"
+                            >
+                            <source srcset="
+                            ./images/our-team/member4-mobile.jpg 1x,
+                            ./images/our-team/member4-mobile@2x.jpg 2x"
+                            media="(min-width: 320px)"
+                            >
+                            
+                            <img src="./images/our-team/member4-mobile.jpg" 
+                                alt="фотография члена команды">
+                        </picture>
                         <div class="team-caption">
                             <h3 class="team-subtitle">Михаил Ермаков</h3>
                             <p class="team-text" lang="en">UI Designer</p>
                             <ul class="network-list list">
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="network-list-item">
                                     <a href="" class="network-link link">
-                                        <svg class="network-img">
+                                        <svg class="network-icon">
                                             <use href="./images/sprite.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -297,10 +472,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Постоянные клиенты -->
-        <!-- <section class="constant-clients">
+        <section class="constant-clients">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="client-list list">
@@ -348,7 +523,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!-- <footer class="footer">

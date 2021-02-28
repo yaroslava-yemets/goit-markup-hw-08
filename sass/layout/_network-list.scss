@@ -1,5 +1,6 @@
 .network-list {
     display: flex;
+    justify-content: center;
 
     &-item {
         width: 44px;
@@ -43,7 +44,7 @@
     }
 }
 
-.network-img {
+.network-icon {
     fill: var(--clients-links);
     width: 20px;
     height: 20px;

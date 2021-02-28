@@ -1,7 +1,22 @@
 .feature {
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 100vw;
+
+    &-subtitle {
+        margin-bottom: 10px;
+        @include titleFont ($fs: 14px, $lh: 16px);
+        text-transform: uppercase;
+        color: var(--emphasis-color);
+
+        @media screen and (max-width: 767px) {
+            text-align: center; 
+        }
+    }
+    
+    &-text {
+        @include fontText ($fs: 14px, $lh: 24px);
+        color: var(--text-color);
+    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -9,70 +24,41 @@
     }
 }
 
-.feature-list-item {
-    margin: 15px;
-    width: 100%;
-    max-width: 450px;
-    margin: 0;
-
+.feature-list {
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+.feature-list-item {
+    max-width: 450px;
+    margin: 0;
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px; 
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 15px * 4) / 2);
+        margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 25vw;
+        flex-basis: calc((100% - 15px * 8) / 4);
     }
+}
+
+.feature-icon-bcg {
+    @include centeredFlex ();
+    background-color: var(--second-bcg);
+    height: 120px;
+    margin-bottom: 30px;
 }
 
 
 
-
-// .feature {
-//     padding: 94px 0;
-
-//     &-list {
-//         display: flex;
-
-//         &-item {
-//             width: calc((100% - 90px)/4);
-//         }
-
-//         &-item:not(:last-child) {
-//             margin-right: 30px;
-//         }
-//     }
-
-//     &-img-bcg {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         margin-bottom: 30px;
-//         width: 270px;
-//         height: 120px;
-//         background-color: var(--second-bcg);
-//     }
     
-//     &-img {
-//         width: 70px;
-//         height: 70px;
-//     }
-
-//     &-subtitle {
-//         margin-bottom: 10px;
-//         font-weight: 700;
-//         font-size: 14px;
-//         line-height: 1.143;
-//         letter-spacing: 0.03em;
-//         text-transform: uppercase;
-//         color: var(--emphasis-color);
-//     }
-    
-//     &-text {
-//         font-weight: 400;
-//         font-size: 14px;
-//         line-height: 1.71;
-//         letter-spacing: 0.03em;
-//         color: var(--text-color);
-//     }
-// }

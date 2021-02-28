@@ -5,6 +5,13 @@
     letter-spacing: $ls;
 }
 
+@mixin fontText ($fs, $lh, $ls: 0.03em, $fw: 400) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh/$fs;
+    letter-spacing: $ls;
+}
+
 @mixin fontButton ($fw: 700, $fs: 16px, $lh: 30px, $ls: 0.06em) {
     font-weight: $fw;
     font-size: $fs;
@@ -15,5 +22,5 @@
 @mixin centeredFlex () {
     display: flex;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
 }

@@ -1,7 +1,6 @@
 .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    width: 480px;
     height: 400px;
     margin: 0 auto;
     background-color: var(--bcg-footer-color);
@@ -9,15 +8,19 @@
            rgba(47, 48, 58, 0.4),
            rgba(47, 48, 58, 0.4)
            ), url(../../images/hero/hero-mobile.jpg);
-    background-size: 480px 400px;
+    background-size: cover;
 
     @media screen and (min-width: 1200px) {
+        height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
     }
 
     &-title {
         margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 360px;
         @include titleFont ($fs: 26px, $lh: 42px, $ls: 0.06em, $fw: 900);
         text-align: center;
         text-transform: uppercase;
@@ -25,6 +28,7 @@
 
         @media screen and (min-width: 1200px) {
             @include titleFont ($fs: 44px, $lh: 60px, $ls: 0.06em, $fw: 900);
+            max-width: 696px;
         }
     }
 }
@@ -34,14 +38,20 @@
     screen and (min-resolution: 192dpi) and (min-width: 320px),
     screen and (min-resolution: 2dppx) and (min-width: 320px) {
         .hero {
-            background-image: url(../../images/hero/hero-mobile@2x.jpg);
+            background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ), url(../../images/hero/hero-mobile@2x.jpg);
         }
 }
 
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url(../../images/hero/hero-tablet.jpg);
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ), url(../../images/hero/hero-tablet.jpg);
     }
 }
 
@@ -50,14 +60,20 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
         .hero {
-            background-image: url(../../images/hero/hero-tablet@2x.jpg);
+            background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ), url(../../images/hero/hero-tablet@2x.jpg);
         }
 }
 
 
 @media screen and (min-width: 1200px) {
     .hero {
-        background-image: url(../../images/hero/hero-desktop.jpg);
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ), url(../../images/hero/hero-desktop.jpg);
     }
 }
 
@@ -66,7 +82,10 @@
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         .hero {
-            background-image: url(../../images/hero/hero-desktop@2x.jpg);
+            background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ), url(../../images/hero/hero-desktop@2x.jpg);
         }
 }
 
