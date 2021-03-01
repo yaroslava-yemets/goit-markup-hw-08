@@ -563,16 +563,21 @@ img {
   background-color: var(--white-color);
 }
 
+@media screen and (max-width: 767px) {
+  .projects-list-item :not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects-list-item {
-    margin: 15px;
     width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects-list-item {
-    margin: 15px;
     width: calc((100% - 15px * 6) / 3);
   }
 }
