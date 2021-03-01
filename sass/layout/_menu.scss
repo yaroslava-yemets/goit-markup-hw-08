@@ -18,7 +18,7 @@
 }
 
 .menu-icon-open, .menu-icon-close {
-    transition: fill 1000ms var(--cubic);
+    transition: fill 250ms var(--cubic);
 }
 
 .menu-btn-close {
@@ -69,6 +69,7 @@
         display: block;
         &:not(:last-child){
             margin-bottom: 36px;
+        }
     }
 }
 
@@ -98,6 +99,7 @@
         margin-right: 20px;
     }
 }
+
 .menu-networks-link {
     display: block;
     @include fontText ($fs: 18px, $lh: 22px, $ls: 0.02em, $fw: 500);

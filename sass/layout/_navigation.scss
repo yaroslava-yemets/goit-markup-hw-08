@@ -17,10 +17,7 @@
         position: relative;
         padding-top: 32px;
         padding-bottom: 32px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.143;
-        letter-spacing: 0.02em;
+        @include fontText ($fs: 14, $lh: 16, $ls: 0.02em, $fw: 500);
         color: var(--emphasis-color); 
         transition: color 250ms var(--cubic); 
 

@@ -1,6 +1,7 @@
 .logo {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family: Raleway;
     @include titleFont ($fs: 24px, $lh: 28px);
     color: var(--black-color);
@@ -10,11 +11,15 @@
     }
 
     @media screen and (min-width: 768px) {
-        margin-top: 26px;
-        margin-bottom: 26px;
+        margin-right: 88px;
+        padding-top: 28px;
+        padding-bottom: 28px;
     }
 
     @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        padding-top: 26px;
+        padding-bottom: 26px;
         @include titleFont ($fs: 26px, $lh: 31px);
         
     }
