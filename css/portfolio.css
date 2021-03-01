@@ -564,7 +564,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .projects-list-item :not(:last-child) {
+  .projects-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -604,15 +604,15 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .projects-link {
   display: inline-block;
   width: 100%;
   height: 100%;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .projects-link:hover, .projects-link:focus {
