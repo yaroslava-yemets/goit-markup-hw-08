@@ -42,7 +42,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
     max-width: 480px;
-    height: 100vh;
+    height: 100%;
     background-color: var(--white-color);
     padding: 48px 40px;
 
@@ -104,5 +104,13 @@
     display: block;
     @include fontText ($fs: 18px, $lh: 22px, $ls: 0.02em, $fw: 500);
     color: var(--accent-color);
+}
+
+.vertical-line {
+    width: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
