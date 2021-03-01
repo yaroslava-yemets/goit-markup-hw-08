@@ -271,7 +271,7 @@ img {
   min-height: 796px;
   background-color: var(--white-color);
   padding: 48px 40px;
-  z-index: 34;
+  z-index: 200;
   transition: transform 350ms var(--cubic);
 }
 
