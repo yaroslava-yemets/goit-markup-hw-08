@@ -42,7 +42,8 @@
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
     max-width: 480px;
-    height: 100%;
+    height: 100vh;
+    min-height: 796px;
     background-color: var(--white-color);
     padding: 48px 40px;
 
@@ -68,7 +69,7 @@
     &-item {
         display: block;
         &:not(:last-child){
-            margin-bottom: 36px;
+            margin-bottom: 32px;
         }
     }
 }
@@ -79,12 +80,14 @@
 }
 
 .menu-number {
+    display: block;
     @include fontText ($fs: 34px, $lh: 40px, $ls: 0.02em, $fw: 500);
     color: var(--accent-color);
     margin-bottom: 32px;
 }
 
 .menu-email {
+    display: block;
     @include fontText ($fs: 24px, $lh: 28px, $ls: 0.02em, $fw: 500);
     color: var(--text-color);
     margin-bottom: 64px;
@@ -95,10 +98,9 @@
 }
 
 .menu-networks-item {
-    &:not(:last-child) {
-        margin-right: 20px;
-    }
+    display: flex;
 }
+
 
 .menu-networks-link {
     display: block;
@@ -106,11 +108,11 @@
     color: var(--accent-color);
 }
 
+
 .vertical-line {
-    width: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
     margin-right: 10px;
     margin-left: 10px;
 }
+
 
