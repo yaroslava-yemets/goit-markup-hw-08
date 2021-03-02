@@ -49,6 +49,10 @@
 
     transition: transform 350ms var(--cubic);
 
+    @media screen and (max-width: 430px) {
+        padding: 40px 15px;
+    }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -84,6 +88,10 @@
     @include fontText ($fs: 34px, $lh: 40px, $ls: 0.02em, $fw: 500);
     color: var(--accent-color);
     margin-bottom: 32px;
+
+    @media screen and (max-width: 430px) {
+        @include fontText ($fs: 28px, $lh: 34px, $ls: 0.02em, $fw: 500);
+    }
 }
 
 .menu-email {
@@ -106,6 +114,10 @@
     display: block;
     @include fontText ($fs: 18px, $lh: 22px, $ls: 0.02em, $fw: 500);
     color: var(--accent-color);
+
+    @media screen and (max-width: 430px) {
+        @include fontText ($fs: 16px, $lh: 20px, $ls: 0.02em, $fw: 500);
+    }
 }
 
 

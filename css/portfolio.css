@@ -274,6 +274,12 @@ img {
   transition: transform 350ms var(--cubic);
 }
 
+@media screen and (max-width: 430px) {
+  .mobile-menu {
+    padding: 40px 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -318,6 +324,15 @@ img {
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 430px) {
+  .menu-number {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: 0.02em;
+  }
+}
+
 .menu-email {
   display: block;
   font-weight: 500;
@@ -343,6 +358,15 @@ img {
   line-height: 1.22222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 430px) {
+  .menu-networks-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
 }
 
 .vertical-line {
