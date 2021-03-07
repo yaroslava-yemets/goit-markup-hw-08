@@ -38,14 +38,14 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    left: 50%;
-    transform: translateX(-50%) translateY(-100%);
+    left: 0;
     height: 100vh;
     background-color: var(--white-color);
     padding: 48px 40px;
-    z-index: 200;
+    opacity: 0;
+    transform: scale(0);
 
-    transition: transform 350ms var(--cubic);    
+    transition: opacity 300ms var(--cubic), transform 300ms var(--cubic); 
 
     @media  screen and (max-height: 790px) {
         display: flex;
@@ -63,7 +63,10 @@
 }
 
 .mobile-menu.is-open {
-    transform: translateX(-50%) translateY(0%);
+    transform: scale(1);
+    opacity: 1;
+    overflow-y: scroll;
+    z-index: 200;
 }
 
 .menu-nav {
